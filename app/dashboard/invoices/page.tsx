@@ -6,6 +6,12 @@ import { CreateInvoice } from '@/app/ui/invoices/buttons';
 import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
+import { Metadata } from 'next'; //built in metadata object from react
+
+export const metadata: Metadata = {
+  //nesting metadata inside of lower pages overrides parent metadata
+  title: 'Invoices', //string literal gets passed into template
+};
 
 export default async function Page({
   searchParams,

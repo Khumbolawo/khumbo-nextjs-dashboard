@@ -4,6 +4,12 @@ import Link from 'next/link';
 import styles from './ui/home.module.css';
 import { lusitana } from './ui/fonts';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+  description: 'Your home page on the Acme Dashboard',
+};
 
 export default function Page() {
   return (
